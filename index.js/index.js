@@ -37,7 +37,7 @@ function formatDate(timestamp) {
              forecastHTML=
              forecastHTML +
              '<div class= "col-2">'
-             <div class ="forecast-date">
+             <div ="forecast-date">
                 ${formatDay(forecastDay.dt)} <div>
                     <div class="forecast-temp">
                         <span class ="forecast-temp-max">${Math.round(forecastDay.temp.max
@@ -93,12 +93,6 @@ function formatDate(timestamp) {
     let cityInputElement = document.querySelector("#city-input");
     search(cityInputElement.value);
   }
-  
-  let form = document.querySelector("#search-form");
-  form.addEventListener("submit", handleSubmit);
-  
-  search("New York");
-   formatDate(currentTime);
   
   let searchForm = document.querySelector("#submit");
   searchForm.addEventListener("click", handleSubmit);

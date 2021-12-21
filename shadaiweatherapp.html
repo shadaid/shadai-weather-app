@@ -18,50 +18,69 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     </head>
  <body>
-    <h1 class="placeholder">
-    <form>
-    <input 
-    type="search" 
-    placeholder="Enter city" 
-    autofocus= on 
-    autocomplete="off"
-    id="city-input"
-    >
-    <span class="submit"> <input type="submit" value="Search" id="submit" /> </span>
-    <span><button id="current-location-button"> 🧭</button></span>
-  </form>
-</h1>
-<hr>
-<h2  class="city" id="cities"></h2>
-<h3 class= "temperature">
- <P> 
-   <span id="temperature"></span>
-   <span>°F</span>
-  </P>
-  <span id="description">Partly cloudy</span> <div class="cloudy">
-</div>
-  <br>
-  Humidity: <span id="Humidity"></span>%
-            <br/>
-            Feels Like: <span id="feels_like"></span>°
-  <P id="date">
-    <span class="currentDay"></span>
-    <span class="currentTime"></span>  
+    <div class="container">
+      <div class="weather-app-weather">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-9">
+              <form-id="search-form">
+             <input
+              type="search"   
+              placeholder="Enter city"
+              class="form-control"
+              id="city-input"
+              autocomplete="off";
+              />
+            </div>
+            <button type ="submit" class="col-3 btn btn primary w-20" id="search-btn"
+         <i class= "fas fa-search"></i>
+          </button>
+          </form>
+          </div>
+       <div class="overview">
+         <br />
+<h1 id="city" ></h1>
+<ul>
+     <li id="date"> last updated: <span id="date"></span></li>
+     <li id="description"></li>
+   </ul>
+   <br/>
+<div class= "row">
+  <div class="col-6"
+   <div class ="d-flex weather-temperature">
+     <img
+        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+        id="icon"
+        alt=""
+        class="float-left"
+ /> 
+   <span class="float-left">
+   <strong id="temperature"></strong
+    ><span class="units">°C 
+      </span>
+    </div>
+    </div>
+    <div class="col-6">
+      <ul>
+        <li>Humidity: span id="Humidity"></span></li>
+        <li>Wind: <span id="wind"></span>km/h</li>
+        </ul>
+           </div>
+         </div>
+        </div>
+        <div class="weather-forecast" id="forecast"
   </div>
-  <br>
-  Humidity: <span id="Humidity"></span>%
-            <br/>
-            Feels Like: <span id="feels_like"></span>°
-  <P id="date">
-    <span class="currentDay"></span>
-    <span class="currentTime"></span>  
-  </P>
-  </h3> 
-  </div>
 </div>
-</div>
-</div>
-<script src="src/index.js"></script>
+<small>
+  <a 
+    href="https://github.com/shadaid/shadai-weather-app/" 
+    target="_blank">
+  >open-source code </a
+  >
+  by Shadai Dickens
+   </small>
+   </div>
+   </div>
+  <script src="src/index.js"></script>
 </body>
 </html>
-      

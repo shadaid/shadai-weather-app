@@ -32,52 +32,62 @@
               autocomplete="off";
               />
             </div>
-            <button type ="submit" class="col-3 btn btn primary w-20" id="search-btn"
-         <i class= "fas fa-search"></i>
-          </button>
-          </form>
+            <div class="col-3">
+              <input
+              type ="submit" 
+              value="search"
+              class="btn btn-primary w-100" 
+          />
+            </div>
           </div>
+          </form>
        <div class="overview">
-         <br />
-<h1 id="city" ></h1>
-<ul>
+      <h1 id="city" ></h1>
+      <ul>
      <li id="date"> last updated: <span id="date"></span></li>
      <li id="description"></li>
    </ul>
-   <br/>
+  </div>
 <div class= "row">
   <div class="col-6"
-   <div class ="d-flex weather-temperature">
+   <div class =" weather-temperature">
      <img
         src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
         id="icon"
         alt=""
         class="float-left"
  /> 
+ <div>
    <span class="float-left">
    <strong id="temperature"></strong
-    ><span class="units">°C 
-      </span>
+    ><span class="units"> 
+      <a href="#" class="disabled" id="farenheit-link">°F></a> |    
+    <a href="#" id="celcious-link">°C </a> 
+  </span>
+    </div>
     </div>
     </div>
     <div class="col-6">
       <ul>
-        <li>Humidity: span id="Humidity"></span></li>
-        <li>Wind: <span id="wind"></span>km/h</li>
+        <li>Humidity: span id="Humidity"></span>%</li>
+        <li>
+          Wind: <span id="wind-units">km/h</span>
+        </li>
         </ul>
-           </div>
          </div>
         </div>
-        <div class="weather-forecast" id="forecast"
-  </div>
+        <div class="weather-forecast" id="forecast" </div>
 </div>
 <small>
   <a 
     href="https://github.com/shadaid/shadai-weather-app/" 
     target="_blank">
-  >open-source code </a
+  open-source code </a
   >
   by Shadai Dickens
+  <a
+  href="https://shadaiweather.netlify.app/"
+  target="_blank"></a>
    </small>
    </div>
    </div>

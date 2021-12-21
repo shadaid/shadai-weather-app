@@ -133,7 +133,7 @@ fahrenheitLink.addEventListener('click', changeToImperial);
 const celciusLink = document.getElementById('celcius-link');
 celciusLink.addEventListener('click', changeToMetric);
 
-search(city);
+searchCity(brooklyn);
 // displayForecast();
   
  
